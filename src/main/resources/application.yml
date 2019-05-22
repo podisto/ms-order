@@ -1,0 +1,13 @@
+logging:
+  level:
+    org.springframework.web: TRACE
+  file: /var/log/microservice-samples/ms-order.log
+
+server:
+  port: 8300
+
+# Eureka server URL
+eureka:
+  client:
+    service-url:
+      default-zone: http://localhost:8761/eureka/
